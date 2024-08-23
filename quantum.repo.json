@@ -1,0 +1,13 @@
+{
+    "$schema": "...",
+    "enabled": true,
+    "enviroment": "development",
+    "paths": {
+        "components": "dev/components",
+        "utils": "dev/utils"
+    },
+    "components": {
+        "Button": "^0.1.0",
+        "Alert": "^0.1.0"
+    }
+}
