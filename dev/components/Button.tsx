@@ -2,7 +2,7 @@
 
 import React, { ButtonHTMLAttributes } from 'react';
 
-import { cn } from '<utils>/class';
+import { cn } from '<{utils}>/class';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     /**

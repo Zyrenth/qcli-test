@@ -3,9 +3,9 @@
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import React, { BaseHTMLAttributes } from 'react';
 
-import { cn } from '<utils>/class';
+import { cn } from '<{utils}>/class';
 
-import Button from '<components>/Button';
+import Button from '<{components}>/Button';
 
 interface AlertProps extends Omit<BaseHTMLAttributes<HTMLDivElement>, 'title'> {
     /**
