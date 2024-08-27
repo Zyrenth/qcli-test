@@ -8,7 +8,7 @@
     "utils": "dev/utils"
   },
   "components": {
-    "Button": "0.1.1",
+    "Button": "0.1.0",
     "Alert": "0.1.0"
   }
 }
