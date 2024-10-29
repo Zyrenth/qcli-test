@@ -28,6 +28,7 @@ const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
         className,
         title,
         description,
+        style,
         ...props
     },
     ref,
@@ -36,7 +37,13 @@ const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
         <div
             ref={ref}
             role="alert"
-            className={cn('bg-yellow-100 dark:bg-yellow-700 border-l-4 border-yellow-500 dark:border-yellow-600 text-yellow-700 dark:text-yellow-100 p-4 flex justify-between items-center', className)}
+            className={cn(
+                'bg-yellow-100 dark:bg-yellow-700 border-l-4 border-yellow-500 dark:border-yellow-600 text-yellow-700 dark:text-yellow-100 p-4 flex justify-between items-center',
+                /* <<
+                style === {{color}} ? '{{color}}-solid-light-bg {{color}}-solid-light-text' : '',
+                >> */
+                className
+            )}
             {...props}
         >
             <div>

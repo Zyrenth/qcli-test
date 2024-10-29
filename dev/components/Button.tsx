@@ -17,14 +17,20 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
  * @example <Button>Click me</Button>
  */
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(function Button(
-    { children, className, disabled, ...props },
+    { children, className, disabled, style, ...props },
     ref,
 ) {
     return (
         <button
             ref={ref}
             disabled={disabled}
-            className={cn('bg-blue-500 dark:bg-blue-700 hover:bg-blue-600 dark:hover:bg-blue-800 text-white font-bold py-2 px-4 rounded', className)}
+            className={cn(
+                'bg-blue-500 dark:bg-blue-700 hover:bg-blue-600 dark:hover:bg-blue-800 text-white font-bold py-2 px-4 rounded',
+                /* <<
+                style === {{color}} ? '{{color}}-solid-light-bg {{color}}-solid-light-text' : '',
+                >> */
+                className
+            )}
             {...props}
         >
             {children}
