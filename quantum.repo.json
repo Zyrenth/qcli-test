@@ -2,7 +2,7 @@
   "$schema": "...",
   "$version": 1,
   "enabled": true,
-  "enviroment": "development",
+  "environment": "development",
   "paths": {
     "components": "dev/components",
     "utils": "dev/utils"
