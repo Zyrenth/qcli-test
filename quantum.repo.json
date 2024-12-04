@@ -1,6 +1,7 @@
 {
   "$schema": "...",
   "$version": 1,
+  "name": "Quantum CLI Test Remote",
   "enabled": true,
   "environment": "development",
   "paths": {
@@ -8,7 +9,20 @@
     "utils": "dev/utils"
   },
   "components": {
-    "Button": "0.1.2",
-    "Alert": "0.1.0"
+    "Button": {
+      "version": "0.1.2",
+      "utils": {
+        "class": "0.1.0"
+      }
+    },
+    "Alert": {
+      "version": "0.1.0",
+      "utils": {
+        "class": "0.1.0"
+      }
+    }
+  },
+  "utils": {
+    "class": "0.1.0"
   }
 }
